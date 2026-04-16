@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Polityka Prywatności — Odin</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #0f0f11;
+      color: #e4e4e7;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      padding: 40px 20px 80px;
+    }
+    .container { max-width: 720px; margin: 0 auto; }
+    .logo {
+      font-size: 22px;
+      font-weight: 700;
+      color: #a78bfa;
+      letter-spacing: 2px;
+      margin-bottom: 48px;
+      display: inline-block;
+      text-decoration: none;
+    }
+    h1 { font-size: 28px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+    .updated { font-size: 13px; color: #71717a; margin-bottom: 40px; }
+    h2 { font-size: 17px; font-weight: 600; color: #d4d4d8; margin: 36px 0 12px; }
+    p { color: #a1a1aa; margin-bottom: 14px; }
+    ul { color: #a1a1aa; padding-left: 20px; margin-bottom: 14px; }
+    li { margin-bottom: 6px; }
+    a { color: #a78bfa; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .card {
+      background: #1c1c1f;
+      border: 1px solid #27272a;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 14px;
+    }
+    .card p { margin: 0; }
+    .divider { height: 1px; background: #27272a; margin: 40px 0; }
+    .lang-switch { text-align: right; margin-bottom: 32px; }
+    .lang-switch a {
+      font-size: 13px;
+      color: #71717a;
+      border: 1px solid #27272a;
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .lang-switch a:hover { color: #a78bfa; border-color: #a78bfa; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a class="logo" href="index.html">ODIN</a>
+    <div class="lang-switch"><a href="privacy-en.html">English</a></div>
+
+    <h1>Polityka Prywatności</h1>
+    <p class="updated">Ostatnia aktualizacja: 16 kwietnia 2026</p>
+
+    <p>Niniejsza Polityka Prywatności opisuje, jakie dane zbiera aplikacja <strong>Odin</strong> (dalej „Aplikacja"), w jaki sposób są wykorzystywane oraz jakie prawa Ci przysługują jako użytkownikowi.</p>
+    <p>Administratorem danych osobowych jest <strong>Odin App</strong>. Dane kontaktowe administratora znajdziesz na dole strony.</p>
+
+    <div class="divider"></div>
+
+    <h2>1. Jakie dane zbieramy</h2>
+    <ul>
+      <li><strong>Adres email</strong> — podawany przy rejestracji lub pobierany z konta Google</li>
+      <li><strong>Dane płatności cyklicznych</strong> — nazwy subskrypcji, kwoty, daty, kategorie (w trybie Cloud przechowywane na serwerach Supabase; w trybie Selfhost na Twoim własnym serwerze)</li>
+      <li><strong>Dane analityczne</strong> — anonimowe zdarzenia użycia aplikacji (np. otwarcie ekranu, użycie funkcji) zbierane przez PostHog</li>
+      <li><strong>Dane techniczne</strong> — wersja systemu operacyjnego, typ urządzenia (zbierane automatycznie przez PostHog)</li>
+    </ul>
+
+    <h2>2. W jaki sposób wykorzystujemy dane</h2>
+    <ul>
+      <li>Uwierzytelnianie i zarządzanie kontem użytkownika</li>
+      <li>Synchronizacja danych między urządzeniami (tylko tryb Cloud)</li>
+      <li>Wysyłanie powiadomień o zbliżających się płatnościach</li>
+      <li>Poprawa działania i stabilności Aplikacji (analytics)</li>
+      <li>Obsługa subskrypcji Premium</li>
+    </ul>
+
+    <h2>3. Podstawa prawna przetwarzania</h2>
+    <p>Przetwarzamy Twoje dane na następujących podstawach prawnych (art. 6 RODO):</p>
+    <ul>
+      <li><strong>Art. 6(1)(b) — wykonanie umowy</strong> — adres email, dane konta, dane płatności cyklicznych przetwarzane w celu świadczenia usługi (rejestracja, synchronizacja, powiadomienia, obsługa Premium)</li>
+      <li><strong>Art. 6(1)(f) — prawnie uzasadniony interes</strong> — anonimowe dane analityczne (PostHog) przetwarzane w celu poprawy działania i stabilności Aplikacji</li>
+    </ul>
+
+    <h2>4. Podmioty trzecie</h2>
+    <div class="card"><p><strong>Supabase</strong> — przechowywanie danych konta i synchronizacja (serwery w UE). <a href="https://supabase.com/privacy" target="_blank">Polityka prywatności Supabase</a></p></div>
+    <div class="card"><p><strong>Google Sign-In</strong> — logowanie przez konto Google (opcjonalne). <a href="https://policies.google.com/privacy" target="_blank">Polityka prywatności Google</a></p></div>
+    <div class="card"><p><strong>PostHog</strong> — anonimowa analityka użytkowania (serwer EU: eu.i.posthog.com). <a href="https://posthog.com/privacy" target="_blank">Polityka prywatności PostHog</a></p></div>
+    <div class="card"><p><strong>RevenueCat</strong> (USA) — obsługa subskrypcji i płatności (dotyczy użytkowników Premium). Transfer danych do USA odbywa się na podstawie Standardowych Klauzul Umownych (SCC). <a href="https://www.revenuecat.com/privacy" target="_blank">Polityka prywatności RevenueCat</a></p></div>
+
+    <h2>5. Tryb Selfhost</h2>
+    <p>W trybie Selfhost wszystkie dane płatności przechowywane są wyłącznie na serwerze wskazanym przez użytkownika. Administrator Aplikacji nie ma dostępu do tych danych.</p>
+
+    <h2>6. Przechowywanie danych</h2>
+    <p>Dane konta przechowywane są przez czas posiadania aktywnego konta. Po usunięciu konta dane są usuwane w ciągu 30 dni. Dane analityczne są anonimowe i nie są przypisywane do konkretnych użytkowników.</p>
+
+    <h2>7. Twoje prawa (RODO)</h2>
+    <ul>
+      <li><strong>Dostęp</strong> — możesz zażądać kopii swoich danych</li>
+      <li><strong>Sprostowanie</strong> — możesz poprosić o poprawienie nieprawidłowych danych</li>
+      <li><strong>Usunięcie</strong> — możesz zażądać usunięcia swoich danych („prawo do bycia zapomnianym")</li>
+      <li><strong>Przenoszalność</strong> — możesz otrzymać swoje dane w formacie możliwym do odczytu maszynowego</li>
+      <li><strong>Sprzeciw</strong> — możesz sprzeciwić się przetwarzaniu danych w celach analitycznych</li>
+      <li><strong>Cofnięcie zgody</strong> — w zakresie, w jakim przetwarzanie opiera się na zgodzie, możesz ją cofnąć w dowolnym momencie bez wpływu na zgodność z prawem przetwarzania przed cofnięciem</li>
+    </ul>
+    <p>Aby skorzystać z powyższych praw, skontaktuj się z nami: <a href="mailto:anthua.projects@gmail.com">anthua.projects@gmail.com</a>. Odpowiemy na Twoje żądanie w ciągu 30 dni od jego otrzymania (art. 12 RODO).</p>
+    <p>Masz również prawo wnieść skargę do organu nadzorczego — <strong>Prezesa Urzędu Ochrony Danych Osobowych</strong> (ul. Stawki 2, 00-193 Warszawa, <a href="https://uodo.gov.pl" target="_blank">uodo.gov.pl</a>).</p>
+
+    <h2>8. Bezpieczeństwo</h2>
+    <p>Dane konta chronione są przez Row Level Security (RLS) w Supabase — każdy użytkownik ma dostęp wyłącznie do własnych danych. Sesje uwierzytelniające przechowywane są w zaszyfrowanym Secure Store urządzenia.</p>
+
+    <h2>9. Dzieci</h2>
+    <p>Aplikacja nie jest przeznaczona dla osób poniżej 13 roku życia. Nie zbieramy świadomie danych od dzieci. Jeśli stwierdzimy, że konto zostało założone przez osobę poniżej 13 roku życia, usuniemy je wraz z powiązanymi danymi.</p>
+
+    <h2>10. Zmiany Polityki</h2>
+    <p>O istotnych zmianach w niniejszej Polityce poinformujemy poprzez aktualizację daty na górze strony. Dalsze korzystanie z Aplikacji po wprowadzeniu zmian oznacza ich akceptację.</p>
+
+    <h2>11. Kontakt</h2>
+    <p>W sprawach dotyczących prywatności prosimy o kontakt: <a href="mailto:anthua.projects@gmail.com">anthua.projects@gmail.com</a></p>
+
+    <div class="divider"></div>
+    <p style="font-size:13px; color:#71717a; margin-bottom:6px;">Administrator danych: <strong style="color:#a1a1aa;">Antoni Janiszewski</strong> · <a href="mailto:anthua.projects@gmail.com">anthua.projects@gmail.com</a></p>
+    <p style="font-size:13px; color:#52525b;">© 2026 Odin App · <a href="terms.html">Regulamin</a></p>
+  </div>
+</body>
+</html>

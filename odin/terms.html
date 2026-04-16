@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Regulamin — Odin</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #0f0f11;
+      color: #e4e4e7;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      padding: 40px 20px 80px;
+    }
+    .container { max-width: 720px; margin: 0 auto; }
+    .logo {
+      font-size: 22px;
+      font-weight: 700;
+      color: #a78bfa;
+      letter-spacing: 2px;
+      margin-bottom: 48px;
+      display: inline-block;
+      text-decoration: none;
+    }
+    h1 { font-size: 28px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+    .updated { font-size: 13px; color: #71717a; margin-bottom: 40px; }
+    h2 { font-size: 17px; font-weight: 600; color: #d4d4d8; margin: 36px 0 12px; }
+    p { color: #a1a1aa; margin-bottom: 14px; }
+    ul { color: #a1a1aa; padding-left: 20px; margin-bottom: 14px; }
+    li { margin-bottom: 6px; }
+    a { color: #a78bfa; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .divider { height: 1px; background: #27272a; margin: 40px 0; }
+    .lang-switch { text-align: right; margin-bottom: 32px; }
+    .lang-switch a {
+      font-size: 13px;
+      color: #71717a;
+      border: 1px solid #27272a;
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .lang-switch a:hover { color: #a78bfa; border-color: #a78bfa; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a class="logo" href="index.html">ODIN</a>
+    <div class="lang-switch"><a href="terms-en.html">English</a></div>
+
+    <h1>Regulamin</h1>
+    <p class="updated">Ostatnia aktualizacja: 16 kwietnia 2026</p>
+
+    <p>Niniejszy Regulamin określa zasady korzystania z aplikacji mobilnej <strong>Odin</strong> (dalej „Aplikacja"). Korzystając z Aplikacji, akceptujesz poniższe warunki.</p>
+
+    <div class="divider"></div>
+
+    <h2>1. Opis Usługi</h2>
+    <p>Odin to aplikacja mobilna służąca do śledzenia płatności cyklicznych i subskrypcji. Dostępna jest w dwóch trybach:</p>
+    <ul>
+      <li><strong>Cloud</strong> — dane synchronizowane przez serwery Odin (Supabase)</li>
+      <li><strong>Selfhost</strong> — dane przechowywane na własnym serwerze użytkownika</li>
+    </ul>
+
+    <h2>2. Konto użytkownika</h2>
+    <ul>
+      <li>Rejestracja wymaga podania adresu email lub zalogowania przez Google</li>
+      <li>Użytkownik jest odpowiedzialny za bezpieczeństwo swojego hasła</li>
+      <li>Jedno konto może być używane na wielu urządzeniach</li>
+      <li>Zabrania się tworzenia kont w celu nadużywania usługi</li>
+    </ul>
+
+    <h2>3. Plan darmowy i Premium</h2>
+    <p><strong>Plan darmowy</strong> umożliwia dodanie ograniczonej liczby płatności cyklicznych.</p>
+    <p><strong>Plan Premium</strong> (subskrypcja miesięczna lub roczna) zapewnia:</p>
+    <ul>
+      <li>Nieograniczoną liczbę płatności</li>
+      <li>Dostęp do analityki i wykresów</li>
+      <li>Eksport i import danych</li>
+    </ul>
+
+    <h2>4. Subskrypcja Premium</h2>
+    <ul>
+      <li>Subskrypcja odnawiana jest automatycznie przez Google Play / App Store</li>
+      <li>Anulowanie subskrypcji możliwe w dowolnym momencie przez sklep aplikacji</li>
+      <li>Po anulowaniu dostęp Premium aktywny jest do końca opłaconego okresu</li>
+      <li>Zwroty realizowane są zgodnie z polityką Google Play / App Store</li>
+      <li>Ceny mogą ulec zmianie — użytkownicy zostaną poinformowani z wyprzedzeniem</li>
+    </ul>
+
+    <h2>5. Prawa i obowiązki użytkownika</h2>
+    <ul>
+      <li>Użytkownik może korzystać z Aplikacji wyłącznie zgodnie z jej przeznaczeniem</li>
+      <li>Zabrania się prób nieautoryzowanego dostępu do serwerów lub kont innych użytkowników</li>
+      <li>Użytkownik jest właścicielem swoich danych — Odin nie rości do nich praw</li>
+      <li>Użytkownik może w każdej chwili usunąć swoje konto i wszystkie powiązane dane</li>
+    </ul>
+
+    <h2>6. Własność intelektualna</h2>
+    <p>Aplikacja Odin, jej kod, grafika, logo oraz nazwa są własnością Odin App i podlegają ochronie prawnej. Udzielamy Użytkownikowi ograniczonej, niewyłącznej i niezbywalnej licencji na korzystanie z Aplikacji wyłącznie na potrzeby własne, zgodnie z niniejszym Regulaminem.</p>
+    <ul>
+      <li>Zabronione jest kopiowanie, modyfikowanie, dekompilowanie lub dystrybucja Aplikacji bez pisemnej zgody</li>
+      <li>Zabronione jest używanie nazwy lub logo Odin w sposób mogący wprowadzić w błąd</li>
+    </ul>
+
+    <h2>7. Dostępność usługi</h2>
+    <p>Staramy się zapewnić ciągłość działania Aplikacji, jednak nie gwarantujemy 100% dostępności. Możemy czasowo zawiesić usługę w celu przeprowadzenia prac technicznych. W trybie Selfhost dostępność zależy od serwera użytkownika.</p>
+
+    <h2>8. Ograniczenie odpowiedzialności</h2>
+    <p>Aplikacja dostarczana jest w stanie „takim, jakim jest". Odin App nie ponosi odpowiedzialności za:</p>
+    <ul>
+      <li>Utratę danych wynikającą z nieprawidłowego użytkowania</li>
+      <li>Szkody wynikające z przerw w działaniu usługi</li>
+      <li>Decyzje finansowe podjęte na podstawie danych w Aplikacji</li>
+    </ul>
+
+    <h2>9. Zmiany Regulaminu</h2>
+    <p>Zastrzegamy sobie prawo do zmiany niniejszego Regulaminu. O istotnych zmianach poinformujemy poprzez aktualizację daty na górze strony. Dalsze korzystanie z Aplikacji po wprowadzeniu zmian oznacza ich akceptację.</p>
+
+    <h2>10. Rozwiązanie umowy</h2>
+    <p>Użytkownik może w każdej chwili zaprzestać korzystania z Aplikacji i usunąć konto. Odin App zastrzega sobie prawo do zawieszenia kont naruszających niniejszy Regulamin.</p>
+
+    <h2>11. Prawo właściwe</h2>
+    <p>Niniejszy Regulamin podlega prawu polskiemu. Wszelkie spory rozstrzygane będą przez sądy właściwe dla siedziby administratora.</p>
+
+    <h2>12. Kontakt</h2>
+    <p>W sprawach dotyczących Regulaminu: <a href="mailto:anthua.projects@gmail.com">anthua.projects@gmail.com</a></p>
+
+    <div class="divider"></div>
+    <p style="font-size:13px; color:#52525b;">© 2026 Odin App · <a href="privacy.html">Polityka Prywatności</a></p>
+  </div>
+</body>
+</html>
