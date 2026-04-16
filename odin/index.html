@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Odin</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #0f0f11;
+      color: #e4e4e7;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      padding: 40px 20px 80px;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container { max-width: 480px; margin: 0 auto; text-align: center; }
+    .logo {
+      font-size: 32px;
+      font-weight: 700;
+      color: #a78bfa;
+      letter-spacing: 4px;
+      display: block;
+      margin-bottom: 16px;
+    }
+    .tagline { color: #71717a; font-size: 15px; margin-bottom: 48px; }
+    .links { display: flex; flex-direction: column; gap: 12px; }
+    .link-group { display: flex; gap: 8px; justify-content: center; }
+    a {
+      color: #a78bfa;
+      text-decoration: none;
+      border: 1px solid #27272a;
+      padding: 8px 20px;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+    a:hover { border-color: #a78bfa; text-decoration: none; }
+    .label { font-size: 12px; color: #52525b; margin-bottom: 4px; }
+    .divider { height: 1px; background: #27272a; margin: 40px 0; }
+    footer { font-size: 13px; color: #52525b; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <span class="logo">ODIN</span>
+    <p class="tagline">Track recurring payments and subscriptions</p>
+
+    <div class="links">
+      <div>
+        <p class="label">Privacy Policy</p>
+        <div class="link-group">
+          <a href="privacy.html">Polski</a>
+          <a href="privacy-en.html">English</a>
+        </div>
+      </div>
+      <div>
+        <p class="label">Terms of Service</p>
+        <div class="link-group">
+          <a href="terms.html">Polski</a>
+          <a href="terms-en.html">English</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+    <footer>© 2026 Odin App · <a href="mailto:anthua.projects@gmail.com" style="border:none; padding:0;">anthua.projects@gmail.com</a></footer>
+  </div>
+</body>
+</html>
